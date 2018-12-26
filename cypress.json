@@ -1,5 +1,4 @@
 {
-  "projectId": "knm81r",
   "animationDistanceThreshold": 5,
   "baseUrl": "https://stage.anibis.ch/",
   "blacklistHosts": null,
@@ -33,5 +32,6 @@
   "viewportHeight": 660,
   "viewportWidth": 1000,
   "waitForAnimations": true,
-  "watchForFileChanges": true
+  "watchForFileChanges": true,
+  "projectId": "kk8e1j"
 }
