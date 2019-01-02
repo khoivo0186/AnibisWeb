@@ -20,7 +20,7 @@
   "requestTimeout": 5000,
   "responseTimeout": 30000,
   "screenshotsFolder": "Reports/Screenshots",
-  "supportFile": "Ultilities",
+  "supportFile": "Actions",
   "taskTimeout": 60000,
   "testFiles": "**/*.*",
   "trashAssetsBeforeRuns": true,
