@@ -1,7 +1,6 @@
 /*
 * Define business actions here
 */
-
 // Import Interface to interact with defined elements
 var Interface = require('../Interfaces/Interface.js')
 
