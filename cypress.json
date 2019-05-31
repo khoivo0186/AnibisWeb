@@ -13,14 +13,13 @@
   "modifyObstructiveCode": true,
   "numTestsKeptInMemory": 50,
   "pageLoadTimeout": 60000,
-  "pluginsFile": "Plugins",
+  "pluginsFile": "Extensions/index.js",
   "port": null,
   "reporter": "spec",
   "reporterOptions": null,
   "requestTimeout": 5000,
   "responseTimeout": 30000,
   "screenshotsFolder": "Reports/Screenshots",
-  "supportFile": "Actions",
   "taskTimeout": 60000,
   "testFiles": "**/*.*",
   "trashAssetsBeforeRuns": true,
@@ -33,5 +32,6 @@
   "viewportWidth": 1000,
   "waitForAnimations": true,
   "watchForFileChanges": true,
-  "projectId": "kk8e1j"
+  "projectId": "kk8e1j",
+  "supportFile": "Actions"
 }

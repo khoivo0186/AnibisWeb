@@ -3,7 +3,7 @@
 */
 
 // Import Interface to interact with defined elements
-var Interface = require('/Users/khoivo/AnibisWeb/Interfaces/Interface.js')
+var Interface = require('../Interfaces/Interface.js')
 
 // Navigate to specific path
 Cypress.Commands.add('navigate', (path) => {
@@ -24,6 +24,13 @@ Cypress.Commands.add('login', (email, password) => {
   cy.get(Interface.Login.btnContinue).click()
   cy.get(Interface.Login.txtPassword).type(password)
   cy.get(Interface.Login.btnLogin).click()
+})
 
-  cy.contains("Compte d’utilisateur").click()
+// Logout
+Cypress.Commands.add('logout', () => {
+  // Navigate to login screen by using business action 'navigate'
+  cy.visit("/member/default.aspx")
+
+  // Click logout link
+  cy.get(Interface.Header.lnkLogout).click({ position: 'top' })
 })

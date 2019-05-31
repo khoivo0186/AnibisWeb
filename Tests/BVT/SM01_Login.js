@@ -1,5 +1,19 @@
 describe('SM01 - Login', function() {
 
+  /**
+  * PRE & POST CONDITIONS
+  */
+  before(function () {
+    // Launch anibis
+    cy.visit("/")
+
+    // Get dataset
+    cy.fixture('accounts.json').as('accounts')
+  })
+
+  /**
+  * TESTCASES
+  */
   // TC: Verify user can login successful with valid account
   // Steps:
   //  - Navigate to Login screen
@@ -7,14 +21,14 @@ describe('SM01 - Login', function() {
   // VP:
   //  - User login successful and correct username displays in Profile
   it('Verify user can login successful with valid account', function() {
-    // Launch anibis
-    cy.visit("/")
+    this.accounts.forEach((account) => {
+      // Login with valid account
+      cy.login(account.email, account.password)
 
-    // Navigate to Login screen
-    // Login with valid account
-    cy.login("reseller.nvg@gmail.com", "nvg07072012")
+      // VP: username displays on my profile page
+      cy.checkUserInfo(account.username)
 
-    // VP: User login successful and correct username displays in Profile
-    cy.get('.block').find('strong').first().should('contain', 'NVG Reseller')
+      cy.logout()
+    })
   })
 })
