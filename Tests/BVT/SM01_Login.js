@@ -14,12 +14,6 @@ describe('SM01 - Login', function() {
   /**
   * TESTCASES
   */
-  // TC: Verify user can login successful with valid account
-  // Steps:
-  //  - Navigate to Login screen
-  //  - Login with valid account
-  // VP:
-  //  - User login successful and correct username displays in Profile
   it('Verify user can login successful with valid account', function() {
     this.accounts.forEach((account) => {
       // Login with valid account
