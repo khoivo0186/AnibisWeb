@@ -1,9 +1,11 @@
 [{
   "email": "reseller.nvg@gmail.com",
   "password": "nvg07072012",
-  "username": "NVG Reseller"
+  "username": "NVG Reseller",
+  "expectation":"passed"
 },{
   "email": "buyer.nvg@gmail.com",
   "password": "nvg07072012",
-  "username": "NVG Buyer"
+  "username": "NVG Buyer",
+  "expectation":"failed"
 }]
