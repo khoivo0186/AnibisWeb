@@ -1,0 +1,26 @@
+{
+  "name": "anibisweb",
+  "version": "1.0.0",
+  "description": "This project is written in Cypress for end to end test on Anibis Web",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.7.5",
+    "cypress": "^3.4.1",
+    "eslint": "^6.4.0",
+    "eslint-plugin-cypress": "^2.6.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khoivo0186/AnibisWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khoivo0186/AnibisWeb/issues"
+  },
+  "homepage": "https://github.com/khoivo0186/AnibisWeb#readme"
+}
