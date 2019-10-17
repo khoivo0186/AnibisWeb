@@ -11,7 +11,7 @@
     "eslint-plugin-cypress": "^2.6.1"
   },
   "scripts": {
-    "test": "test"
+    "test": "cypress test"
   },
   "repository": {
     "type": "git",
