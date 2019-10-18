@@ -1,3 +1,6 @@
 
-// Import Anibis.js using ES2015 syntax:
+// Import commands:
 import './Anibis'
+import './Verifications'
+import './API'
+import '@applitools/eyes-cypress/commands'
