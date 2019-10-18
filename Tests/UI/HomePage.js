@@ -15,7 +15,7 @@ describe('UI01 - Home Page', function() {
     // Check current window
     cy.eyesCheckWindow('Home Page');
 
-    //End Test abc
+    //End Test abcdef
     cy.eyesClose();
   })
 })
